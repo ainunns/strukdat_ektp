@@ -15,15 +15,13 @@ void ShowData(){
 		printf("================ Database KTP ================\n");
         while(!feof(databaseKTP)){ 
             if(fread(&dataKTP, sizeof(infoDataKTP), 1, databaseKTP)){
-                if(strcmp(dataKTP.NIK, "")){
-					DisplayData(dataKTP);
-					printf("==============================================\n");
-                    ketemu = 1;
-                }
+				DisplayData(dataKTP);
+				printf("==============================================\n");
+                ketemu = 1;
             }   
         }
         if (ketemu == 0){
-        	printf("Belum ada barang yang dimasukkan!\n");
+        	printf("Belum ada data yang dimasukkan!\n");
 		}
 		char response = 'n';
 		do{

@@ -1,0 +1,46 @@
+# Project: database_ektp
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o DisplayData.o ShowData.o GetData.o InsertData.o ExitProgram.o ShowMenu.o
+LINKOBJ  = main.o DisplayData.o ShowData.o GetData.o InsertData.o ExitProgram.o ShowMenu.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = database_ektp.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+DisplayData.o: DisplayData.c
+	$(CC) -c DisplayData.c -o DisplayData.o $(CFLAGS)
+
+ShowData.o: ShowData.c
+	$(CC) -c ShowData.c -o ShowData.o $(CFLAGS)
+
+GetData.o: GetData.c
+	$(CC) -c GetData.c -o GetData.o $(CFLAGS)
+
+InsertData.o: InsertData.c
+	$(CC) -c InsertData.c -o InsertData.o $(CFLAGS)
+
+ExitProgram.o: ExitProgram.c
+	$(CC) -c ExitProgram.c -o ExitProgram.o $(CFLAGS)
+
+ShowMenu.o: ShowMenu.c
+	$(CC) -c ShowMenu.c -o ShowMenu.o $(CFLAGS)

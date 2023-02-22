@@ -15,6 +15,6 @@ typedef struct InfoDataKTP {
 infoDataKTP GetData();
 void DisplayData(infoDataKTP);
 void ShowData();
-void InsertData();
+void AddData();
 void ExitProgram();
 void ShowMenu();

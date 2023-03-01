@@ -2,7 +2,7 @@
 
 void DisplayData(infoDataKTP Data_KTP){
 	printf("==============================================\n");
-	printf("NIK: %s\n", Data_KTP.NIK);
+	printf("NIK: %lld\n", Data_KTP.NIK);
 	printf("Nama: %s\n", Data_KTP.name);
 	printf("Tempat Lahir: %s\n", Data_KTP.tempatLahir);
 	printf("Tanggal Lahir: %d - %d - %d\n", Data_KTP.birthday.day, Data_KTP.birthday.month, Data_KTP.birthday.year);

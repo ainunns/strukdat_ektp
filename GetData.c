@@ -4,7 +4,7 @@ infoDataKTP GetData(){
 	infoDataKTP dataKTP;
     printf("================ Input Data KTP ================\n");
     printf("NIK (16 digit): ");
-    scanf("%s", dataKTP.NIK);
+    scanf("%lld", &dataKTP.NIK);
     printf("Nama: ");
     scanf("\n%[^\n]s", dataKTP.name);
     printf("Tempat Lahir: ");

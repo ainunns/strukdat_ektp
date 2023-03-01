@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include "header.h"
 
-int main(){  
+int main(){ 
+	size = 0;
+	LoadData();
 	while (1){
 	    ShowMenu();
 	    printf("Silakan pilih menu yang Anda inginkan: ");

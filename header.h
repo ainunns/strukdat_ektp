@@ -16,5 +16,5 @@ infoDataKTP GetData();
 void DisplayData(infoDataKTP);
 void ShowData();
 void AddData();
-void ExitProgram();
+void ExitProgram(); 
 void ShowMenu();

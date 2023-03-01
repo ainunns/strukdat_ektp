@@ -17,7 +17,11 @@ int main(){
 	            ShowData();
 	            break;
 	        }
-	        case 3: {
+			case 3: {
+				SearchData();
+				break;
+			}
+	        case 4: {
 	            ExitProgram();
 	            break;
 	        }
